@@ -1,0 +1,21 @@
+server:
+  port: 2004
+
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DevRooster/EXAMEN-PARCIAL-DAD.git # ruta del repositorio git
+          searchPaths: config-data
+          #username:
+          #password:
+          default-label: main
+
+  security:
+    user:
+      name: root
+      password: 123456
